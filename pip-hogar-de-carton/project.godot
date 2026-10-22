@@ -1,0 +1,26 @@
+; Proyecto Godot 4 - Pip: Hogar de Cartón
+config_version=5
+
+[application]
+
+config/name="Pip: Hogar de Cartón"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+run/main_scene="res://world/main.tscn"
+
+[autoload]
+
+GameClock="*res://autoload/game_clock.gd"
+WeatherManager="*res://autoload/weather_manager.gd"
+AudioManager="*res://autoload/audio_manager.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+anti_aliasing/quality/msaa_3d=0
+anti_aliasing/quality/screen_space_aa=0
